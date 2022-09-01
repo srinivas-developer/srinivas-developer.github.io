@@ -9,18 +9,23 @@
 	<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>	
   </head>
   <body>
-	<nav class="navbar arya-navbar is-fixed-top" role="navigation" aria-label="main navigation">
-		<div class="container">
-			<div class="navbar-brand"> 
-				<a href="index.html"> 
-					<img class="arya-logo" src="/images/arya.png"> 
-				</a>
-				<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="signalNavbar"> <span aria-hidden="true"></span> <span aria-hidden="true"></span> <span aria-hidden="true"></span> </a>
+	<section class="section">
+		<nav class="navbar arya-navbar is-fixed-top" role="navigation" aria-label="main navigation">
+			<div class="container">
+				<div class="navbar-brand"> 
+					<a href="index.html"> 
+						<img class="arya-logo" src="/images/arya.png"> 
+					</a>
+					<a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="signalNavbar"> <span aria-hidden="true"></span> <span aria-hidden="true"></span> <span aria-hidden="true"></span> </a>
+				</div>
+				<div id="Navbar" role="button" class="navbar-menu"><div class="navbar-end"> <a class="navbar-item" href="index.html">Home</a> <a class="navbar-item" href="/cakes/">Cakes</a> <a class="navbar-item" href="/contact/">Contact Us</a> <a class="navbar-item" href="/donate/">Donate</a> <a class="navbar-item" href="https://twitter.com/signalapp" target="_blank"><i class="fa fa-twitter"></i></a> <a class="navbar-item" href="https://instagram.com/signal_app/" target="_blank"><i class="fa fa-instagram"></i></a></div></div>			
 			</div>
-			<div id="signalNavbar" class="navbar-menu"><div class="navbar-end"> <a class="navbar-item get-signal" href="/download/">Get Signal</a> <a class="navbar-item" href="https://support.signal.org">Support</a> <a class="navbar-item" href="index.html">Home</a> <a class="navbar-item" href="/cakes/">Cakes</a> <a class="navbar-item" href="/contact/">Contact Us</a> <a class="navbar-item" href="/donate/">Donate</a> <a class="navbar-item" href="https://twitter.com/signalapp" target="_blank"><i class="icon icon-twitter"></i></a> <a class="navbar-item" href="https://instagram.com/signal_app/" target="_blank"><i class="icon icon-instagram"></i></a></div></div>			
-		</div>
-	</nav>
+		</nav>
+	</section>
 	<section class="hero-main hero"><div class="hero-body"><div class="container"><div class="columns"><div class="column is-two-fifths"><h1>Cheers!</h1><p class="body1">Celebrate your great occasions with delicious cakes. Your toungue will want more once you taste ;)</p><p> <br> <a class="get-signal button button-white" href="#"> Order Now </a></p></div><div class="column mobile-screenshots"><img class="screenshot2" src="/images/chocolate.png"></div></div></div></div></section>
+	<br>
+	<h1>We made these!</h1>
+	</br>
 	<div class="slideshow-container">
 		<div class="mySlides fade">
 		  <div class="numbertext">1 / 4</div>
@@ -58,6 +63,9 @@
 </footer>
 	<script src="/js/script.js"></script>
     <script>
+		$("#Navbar").click(function(){
+			$(this).classList.toggle('is-active');
+		});
         bulmaCarousel.attach('#carousel-demo', {
             slidesToScroll: 1,
             slidesToShow: 1,
