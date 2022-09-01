@@ -77,43 +77,26 @@
     </nav>
   </div>
 </section>
-<section>
-        <div id="slider">
-            <div class="card">
-                <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
-                        <img src="/images/strawberry.jpg" alt="" />
-                    </figure>
-                </div>
-                <div class="card-content slider-text ">
-                    <div class="is-size-5 box">
-                    </div>
-                </div>
-            </div>
-            <div class="card ">
-                <div class="card-image">
-                    <figure class="image is-16by9 is-covered">
-                        <img src="/images/cookies.jpg" alt="" />
-                    </figure>
-                </div>
-                <div class="card-content slider-text ">
-                    <p class="is-size-5 box">                      
-                    </p>
-                </div>
-            </div>
-            <div class="card ">
-                <div class="card-image">
-                    <p class="image is-16by9 is-covered">
-                        <img src="/images/wondercup.jpg" alt="" />
-                    </p>
-                </div>
-                <div class="card-content slider-text ">
-                    <p class=" is-size-5 box">
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="section">
+			<div class="container">
+				<!-- Start Carousel -->
+				<div id="carousel-demo" class="carousel">
+					<div class="item-1">
+						<img src="/images/wondercup.jpg" alt="" />
+					</div>
+					<div class="item-2">
+						 <img src="/images/cookies.jpg" alt="" />
+					</div>
+					<div class="item-3">
+						<img src="/images/strawberry.jpg" alt="" />
+					</div>
+					<div class="item-3">
+						<img src="/images/white.jpg" alt="" />
+					</div>
+				</div>
+				<!-- End Carousel -->
+			</div>
+		</section>
 <footer class="footer">
   <div class="content has-text-centered">
     <p>
@@ -125,7 +108,7 @@
 </footer>
  
     <script>
-        bulmaCarousel.attach('#slider', {
+        bulmaCarousel.attach('#carousel-demo', {
             slidesToScroll: 1,
             slidesToShow: 1,
             infinite: true,
