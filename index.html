@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Srinivas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<script src="/js/script.js"/>
+  </head>
+  <body>
+	<section class="hero is-primary is-medium">
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <!--a class="navbar-item">
+            <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+          </a-->
+          <span class="navbar-burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroA" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active">
+              Home
+            </a>
+            <a class="navbar-item">
+              Cakes
+            </a>
+            <a class="navbar-item">
+              Contact Us
+            </a>
+            <span class="navbar-item">
+              <a class="button is-primary is-inverted">
+                <span class="icon">
+                  <i class="fab fa-shopping-cart"></i>
+                </span>
+                <span>Order</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        Arya Pastries
+      </h1>
+      <h4 class="subtitle">
+        We make your celebrations special with delicious cakes!
+      </h4>
+    </div>
+  </div>
+
+  <!-- Hero footer: will stick at the bottom -->
+  <div class="hero-foot">
+    <nav class="tabs">
+      <div class="container">
+        <ul>
+          <li class="is-active"><a>Overview</a></li>
+          <li><a>Modifiers</a></li>
+          <li><a>Grid</a></li>
+          <li><a>Elements</a></li>
+          <li><a>Components</a></li>
+          <li><a>Layout</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</section>
+<section>
+        <div id="slider">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-16by9 is-covered">
+                        <img src="/images/strawberry.jpeg" alt="" />
+                    </figure>
+                </div>
+                <div class="card-content slider-text ">
+                    <div class="is-size-5 box">
+                    </div>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-image">
+                    <figure class="image is-16by9 is-covered">
+                        <img src="/images/cookies.jpeg" alt="" />
+                    </figure>
+                </div>
+                <div class="card-content slider-text ">
+                    <p class="is-size-5 box">                      
+                    </p>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-image">
+                    <p class="image is-16by9 is-covered">
+                        <img src="/images/wondercup.jpeg" alt="" />
+                    </p>
+                </div>
+                <div class="card-content slider-text ">
+                    <p class=" is-size-5 box">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>Arya Pastries</strong> by <a href="https://sivaranjanic.com">Srinivas</a>. The source code is licensed
+      <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+      is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+    </p>
+  </div>
+</footer>
+ <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+    <script>
+        bulmaCarousel.attach('#slider', {
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            infinite: true,
+            autoplay: true,
+        });
+    </script>
+  </body>
+</html>
